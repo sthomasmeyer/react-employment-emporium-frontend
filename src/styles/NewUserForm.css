@@ -1,0 +1,47 @@
+.NewUserForm h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.NewUserForm-main {
+  width: 400px;
+  border: 3px solid #f4a3a3;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.NewUserForm-main label {
+  color: #171717;
+  font-weight: bolder;
+}
+
+.NewUserForm-main input {
+  padding: 2.5px;
+  margin-bottom: 10px;
+}
+
+.NewUserForm-main button {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5%;
+  color: ghostwhite;
+  background-color: #171717;
+  font-weight: bolder;
+}
+
+.NewUserForm-main button:hover {
+  color: #171717;
+  background-color: #f4a3a3;
+  cursor: pointer;
+}
+
+.NewUserForm-back-to-login {
+  margin-top: 1rem;
+  border-top: 1px solid;
+  padding-top: 1rem;
+}
+
+.NewUserForm-back-to-login button:hover {
+  color: #171717;
+  background-color: #bfe5fc;
+}

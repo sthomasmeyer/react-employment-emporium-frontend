@@ -1,0 +1,80 @@
+.Job {
+  margin: 0;
+  padding: 0;
+}
+
+.Job-main {
+  width: 888px;
+  border: 3px solid #f4a3a3;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.Job-banner {
+  color: #171717;
+  text-align: center;
+}
+
+.Job-job-details {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.Job-job-details div {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#job-left-col {
+  border: 1px solid #171717;
+  display: flex;
+  flex: 0 0 45%;
+  flex-direction: column;
+  margin-top: -0.75rem;
+  margin-right: -1rem;
+}
+
+#job-right-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: -0.75rem;
+  margin-left: -1rem;
+}
+
+#job-salary {
+  margin-bottom: 0.1rem;
+}
+
+#submit-application-btn {
+  display: flex;
+  margin: 0 auto;
+  margin-top: -0.1rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+  border-radius: 5%;
+  color: ghostwhite;
+  background-color: #171717;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+#submit-application-btn:hover {
+  cursor: pointer;
+  color: #171717;
+  background-color: #f4a3a3;
+}
+
+#application-submitted-msg {
+  color: #171717;
+  max-width: 4rem;
+  margin: 0 auto;
+  margin-top: -0.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}

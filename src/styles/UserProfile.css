@@ -1,0 +1,70 @@
+.UserProfile {
+  margin: 0;
+  padding: 0;
+}
+
+.UserProfile h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.UserProfile-main {
+  width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 3px solid #f4a3a3;
+}
+
+.UserProfile-user-info {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.UserProfile-user-info li {
+  margin: 0.5rem;
+}
+
+#logout-btn {
+  float: right;
+  padding: 5px;
+  border-radius: 15%;
+  color: ghostwhite;
+  background-color: #171717;
+  font-weight: bolder;
+}
+
+#logout-btn:hover {
+  color: #171717;
+  background-color: #bfe5fc;
+  cursor: pointer;
+}
+
+.UpdateUserForm {
+  border-top: 1px solid;
+  margin: 0.5rem;
+}
+
+.UpdateUserForm label {
+  color: #171717;
+  font-weight: bolder;
+}
+
+.UpdateUserForm input {
+  padding: 2.5px;
+  margin-bottom: 10px;
+}
+
+.UpdateUserForm button {
+  padding: 5px;
+  border-radius: 15%;
+  color: ghostwhite;
+  background-color: #171717;
+  font-weight: bolder;
+}
+
+.UpdateUserForm button:hover {
+  color: #171717;
+  background-color: #f4a3a3;
+  cursor: pointer;
+}

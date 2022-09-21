@@ -1,0 +1,53 @@
+.LoginForm {
+  width: 475px;
+  border: 3px solid #f4a3a3;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.LoginForm label {
+  color: #171717;
+  font-weight: bolder;
+}
+
+.LoginForm input {
+  padding: 2.5px;
+  margin-bottom: 10px;
+}
+
+.LoginForm-main button {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5%;
+  color: ghostwhite;
+  background-color: #171717;
+  font-weight: bolder;
+}
+
+.LoginForm-main button:hover {
+  color: #171717;
+  background-color: #f4a3a3;
+  cursor: pointer;
+}
+
+.LoginForm-main {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+  padding-bottom: 0.75rem;
+}
+
+.LoginForm-create-account button {
+  padding: 5px;
+  border-radius: 5%;
+  font-size: 1rem;
+  color: ghostwhite;
+  background-color: #171717;
+  font-weight: bolder;
+}
+
+.LoginForm-create-account button:hover {
+  color: #171717;
+  background-color: #bfe5fc;
+  cursor: pointer;
+  border-radius: 5%;
+}

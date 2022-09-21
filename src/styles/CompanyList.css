@@ -1,0 +1,48 @@
+.CompanyList {
+  margin: 0;
+  padding: 0;
+}
+
+.CompanyList-main {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.CompanyList-banner h1 {
+  color: #171717;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.CompanyList-main {
+  display: flex;
+}
+
+.CompanyList-main li {
+  margin-top: 0.5rem;
+}
+
+.CompanyList-element {
+  width: 400px;
+  margin: 1rem;
+}
+
+#co-list-left-col {
+  display: flex;
+  border: 3px solid #f4a3a3;
+  flex: 0 0 45%;
+  flex-direction: column;
+}
+
+#co-list-search-bar {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+#co-list-right-col {
+  border: 3px solid #bfe5fc;
+  height: 500px;
+  flex: 1;
+  flex-direction: column;
+}

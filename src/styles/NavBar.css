@@ -1,0 +1,65 @@
+.NavBar {
+  color: ghostwhite;
+  background-color: #171717;
+  width: 4.55rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transition: width 200ms ease;
+}
+
+.NavBar nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.NavBar li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  height: 4rem;
+  padding: 0.25rem;
+  margin-left: -1.75rem;
+  margin-right: 0.5rem;
+}
+
+.NavBar li:hover {
+  background-color: #f4a3a3;
+  outline: 3px solid ghostwhite;
+  border-radius: 10%;
+}
+
+.NavBar li div {
+  width: 100%;
+}
+
+.NavBar #profile {
+  position: absolute;
+  bottom: 0;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  margin-left: -1.1rem;
+}
+
+.NavBar .NavBar-link {
+  display: none;
+  color: ghostwhite;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.NavBar:hover {
+  width: 12.5rem;
+}
+
+.NavBar:hover .NavBar-link {
+  display: block;
+}

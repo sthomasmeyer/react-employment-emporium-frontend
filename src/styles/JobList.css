@@ -1,0 +1,70 @@
+.JobList {
+  margin: 0;
+  padding: 0;
+}
+
+.JobList li {
+  list-style: none;
+}
+
+.JobList h1 {
+  color: #171717;
+  text-align: center;
+}
+
+.JobList-main {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.JobList-job {
+  color: #171717;
+  width: 925px;
+  border: 3px solid #f4a3a3;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.JobList-job:hover {
+  background-color: #bfe5fc;
+}
+
+.JobList-job h3 {
+  margin: 0;
+  padding: 0.65rem;
+}
+
+.JobList-job-details {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#job-list-left-col {
+  border: 1px solid #171717;
+  display: flex;
+  margin-top: -0.75rem;
+  margin-right: -1rem;
+  flex: 0 0 45%;
+  flex-direction: column;
+}
+
+#job-list-search-bar {
+  margin-left: 2.5rem;
+}
+
+#job-list-right-col {
+  display: flex;
+  margin-top: -0.75rem;
+  margin-left: -1rem;
+  flex: 1;
+  flex-direction: column;
+}
+
+#job-list-salary {
+  margin-bottom: 0.1rem;
+}

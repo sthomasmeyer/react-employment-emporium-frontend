@@ -1,17 +1,56 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import * as ReactDOMClient from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ProtectedRoute from './components/ProtectedRoute';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ErrorElement from './components/ErrorElement';
+import NewUserForm from './components/NewUserForm';
+import CompanyList from './components/CompanyList';
+import DefaultMessage from './components/DefaultMessage';
+import Company from './components/Company';
+import JobList from './components/JobList';
+import Job from './components/Job';
+import UserProfile from './components/UserProfile';
+import './styles/index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorElement />
+  },
+  {
+    path: '/create-account',
+    element: <NewUserForm />
+  },
+  {
+    path: '/companies',
+    element: <ProtectedRoute component={<CompanyList />} />,
+    children: [
+      {
+        path: '',
+        element: <DefaultMessage />
+      },
+      {
+        path: ':handle',
+        element: <ProtectedRoute component={<Company />} />
+      }
+    ]
+  },
+  {
+    path: '/jobs',
+    element: <ProtectedRoute component={<JobList />} />
+  },
+  {
+    path: '/jobs/:id',
+    element: <ProtectedRoute component={<Job />} />
+  },
+  {
+    path: '/user-profile',
+    element: <UserProfile />
+  }
+]);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOMClient.createRoot(document.getElementById('root'));
+
+ReactDOMClient.createRoot(root.render(<RouterProvider router={router} />));
